@@ -85,7 +85,7 @@
     y=data.substring(in+1);
     dis("Notice: "+x,y);
     delay(200);
-    pinMode(D6,getLight()=="1");
+    digitalWrite(D6,getLight()=="1");
     delay(200);
     
 
