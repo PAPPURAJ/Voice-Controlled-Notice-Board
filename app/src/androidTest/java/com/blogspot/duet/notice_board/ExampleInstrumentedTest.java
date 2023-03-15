@@ -1,4 +1,4 @@
-package com.blogspot.duet.voice_automation;
+package com.blogspot.duet.notice_board;
 
 import android.content.Context;
 

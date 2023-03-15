@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "419736117864",
-    "firebase_url": "https://voice-based-notice-board-default-rtdb.firebaseio.com",
-    "project_id": "voice-based-notice-board",
-    "storage_bucket": "voice-based-notice-board.appspot.com"
+    "project_number": "713839005330",
+    "firebase_url": "https://iot-voice-be5fb-default-rtdb.firebaseio.com",
+    "project_id": "iot-voice-be5fb",
+    "storage_bucket": "iot-voice-be5fb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:419736117864:android:e962b7bcfa100e51b511dd",
+        "mobilesdk_app_id": "1:713839005330:android:798e906292acf0be1c604b",
         "android_client_info": {
-          "package_name": "com.blogspot.duet.voice_automation"
+          "package_name": "com.blogspot.duet.notice_board"
         }
       },
       "oauth_client": [
         {
-          "client_id": "419736117864-miibjnae48rvfdlnvr3k82ntf2mlvjko.apps.googleusercontent.com",
+          "client_id": "713839005330-3004e8inlq90aoug3upabddbe8oqj2va.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB8vd2EnfCfCfWzN9EFMUvTw5X8lG_7TOc"
+          "current_key": "AIzaSyBLdWvhUmfpVxHIuX3hxqfnjwHGbgaxBwY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "419736117864-miibjnae48rvfdlnvr3k82ntf2mlvjko.apps.googleusercontent.com",
+              "client_id": "713839005330-3004e8inlq90aoug3upabddbe8oqj2va.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

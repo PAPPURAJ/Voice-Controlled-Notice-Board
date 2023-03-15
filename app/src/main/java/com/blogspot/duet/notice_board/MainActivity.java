@@ -1,4 +1,4 @@
-package com.blogspot.duet.voice_automation;
+package com.blogspot.duet.notice_board;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
@@ -82,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"Notice Updated",Toast.LENGTH_SHORT).show();
                         }
                     });
+
+                    if(text.toLowerCase().contains("light"))
+                        firebaseDatabase.getReference("Light").setValue(text.toLowerCase().contains("on")?"1":"0");
+
 
 
 
