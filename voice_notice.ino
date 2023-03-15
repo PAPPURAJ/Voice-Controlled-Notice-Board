@@ -4,8 +4,8 @@
 #include <LiquidCrystal_I2C.h> 
 
 
- #define FIREBASE_HOST "voice-based-notice-board-default-rtdb.firebaseio.com"  //Database link
- #define FIREBASE_AUTH "hWhes26LFnakkxeLPDneclih58N9iVLYekMOhzXC"  //Database secrate
+ #define FIREBASE_HOST "iot-voice-be5fb-default-rtdb.firebaseio.com"  //Database link
+ #define FIREBASE_AUTH "GxgPHS16OlYWC24qU7SYZD5ezjbIJpKzOYzGY3Aj"  //Database secrate
 
  #define WIFI_SSID "IOT_NOTICE"      //Router name
  #define WIFI_PASSWORD "00000000"  //Router password
@@ -20,15 +20,26 @@
   if (Firebase.getString(loadData, "/Notice")){
       return loadData.stringData();
     }
+    return "0";
   }
+
+  String getLight(){
+  if (Firebase.getString(loadData, "/Light")){
+      return loadData.stringData();
+    }
+    return "0";
+  }
+
+  
  
  void setup()  
   {  
-   lcd.init();      
+   lcd.begin();      
    lcd.backlight();  
 
 
    pinMode(D4,OUTPUT);
+   pinMode(D6,OUTPUT);
   
   Serial.begin(9600);
 
@@ -73,6 +84,8 @@
     x=data.substring(0,in);
     y=data.substring(in+1);
     dis("Notice: "+x,y);
+    delay(200);
+    pinMode(D6,getLight()=="1");
     delay(200);
     
 
